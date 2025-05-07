@@ -3,7 +3,7 @@ mod command;
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
   tauri::Builder::default()
-    .invoke_handler(tauri::generate_handler![command::navigate])
+    .invoke_handler(tauri::generate_handler![command::create_webview, command::navigate, command::resize])
     .setup(|app| {
       if cfg!(debug_assertions) {
         app.handle().plugin(

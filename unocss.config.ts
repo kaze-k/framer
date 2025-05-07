@@ -12,7 +12,13 @@ import {
 export default defineConfig({
   shortcuts: [],
   theme: {
-    colors: {},
+    colors: {
+      primary: "var(--color-primary)",
+      secondary: "var(--color-secondary)",
+      accent: "var(--color-accent)",
+      bg: "var(--color-bg)",
+      text: "var(--color-text)",
+    },
   },
   presets: [presetWind3(), presetTypography(), presetAttributify()],
   transformers: [

@@ -49,7 +49,7 @@ export default defineConfig({
       },
     },
   },
-  plugins: [solid(), Unocss()],
+  plugins: [Unocss(), solid()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "../src"),
